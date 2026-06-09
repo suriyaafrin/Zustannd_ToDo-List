@@ -6,7 +6,7 @@ function TodoItem({todo}){
 
     return(
         <div className="flex items-center justify-between border border-gray-100 rounded-lg px-4 py-3 bg-white">
-            <p onClick={toggleTodo(todo.id)}
+            <p onClick={()=>toggleTodo(todo.id)}
             className={`flex-1 text-sm cursor-pointer ${
                 todo.completed? "line-through text-gray-400":"text-gray-700"
             }`}>
